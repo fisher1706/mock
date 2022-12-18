@@ -33,6 +33,12 @@ def get_exeption(exceptions):
     # return exept
 
 
+@app.route('/HttpServices/api/exceptions/id/<exceptions>', methods=['GET', 'POST'])
+def get_exeption_id(exceptions):
+    return render_template('exception.json')
+    # return exept
+
+
 @app.route('/HttpServices/api/transactions/id/<tran_id>', methods=['GET', 'POST'])
 def get_trans(tran_id):
     return render_template('trans.json')
